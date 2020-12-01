@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title>Homework 4</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div>
+    <p style="font-weight: bold; font-size: 1.2rem; color:red; text-align: center;">The flight you have selected is sold out. Please try to book a different flight.</p>
+    <h1 style="text-align: center;">Book A Flight</h1>
+    <div class="center">
+        <form action="/confirmation" method="POST">
+            <ul class="form-ul">
+                <li>
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Full Name" class="text-input"><br>
+                    </div>
+                    <div>
+                        <input type="text" id="phone_number" name="phone_number" placeholder="Phone number" class="text-input"><br>
+                    </div>
+                    <div>
+                        <select name="flight" id="flight" class="select">
+                            <option value="invalid_input">-Choose a flight-</option>  
+                            <option value="JFK">Houston, TX -> Queens, NY</option>
+                            <option value="LAX">Houston, TX -> Los Angeles, CA</option>
+                            <option value="MIA">Houston, TX -> Miami, FL</option>
+                            <option value="ORD">Houston, TX -> Chicago, IL</option>
+                            <option value="DEN">Houston, TX -> Denver, CO</option>
+                            <option value="DCA">Houston, TX -> Arlington, VA</option>
+                            <option value="PDX">Houston, TX -> Portland, OR</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="text" id="email_address" name="email_address" placeholder="Email" class="text-input"><br>
+                    </div>
+                    <div>
+                        <input type="text" id="credit_card" name="credit_card" placeholder="Credit Card Number" class="text-input"><br>
+                    </div>
+                    <div>
+                        <select name="fare_conditions" id="fare_conditions" class="select">
+                            <option value="invalid_input">-Choose a fare condition-</option>  
+                            <option value="150.00">Economy $150.00</option>
+                            <option value="300.00">First Class $300.00</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <input type="submit" value="Book" style="margin-left:33%;margin-top:10px;" class="button">
+                </li>
+            </ul>   
+        </form> 
+    </div>
+</div>
+</body>
+</html>
